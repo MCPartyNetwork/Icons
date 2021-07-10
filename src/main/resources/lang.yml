@@ -1,0 +1,19 @@
+# Placeholders:
+# %icon% - icon with color
+# %target% - target player name
+
+MESSAGES:
+  NO-PERMISSION: '&cNo permission!'
+  NO-PERMISSION-PURCHASE: '&cYou do not have access to this! Purchase it on the server store!'
+  INVALID-TARGET: '&cInvalid target'
+  INVALID-ICON: '&cInvalid icon'
+
+  ICONS:
+    CHANGE-ICON: '&aYou have updated your icon to %icon%'
+    RESET-ICON: '&cYou have reset your icon'
+
+    ADMIN:
+      TARGET-CHANGE-ICON-RECEIVED-MESSAGE: '&aYour icon has been updated to %icon%'
+      CHANGE-TARGET-ICON: '&aUpdated icon for %target%'
+      TARGET-RESET-ICON-RECEIVED-MESSAGE: '&aYour icon has been reset'
+      RESET-TARGET-ICON: '&aReset icon for %target%'

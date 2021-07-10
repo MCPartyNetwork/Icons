@@ -1,0 +1,10 @@
+# Placeholders:
+# %label% - command label
+
+DEFAULT-ICON: ''
+TITLE: '&dIcons'
+GUI-SIZE: 18
+
+FORMATTING:
+  RESET:
+    SLOT: 17

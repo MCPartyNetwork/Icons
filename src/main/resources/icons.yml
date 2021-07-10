@@ -1,0 +1,29 @@
+HEART:
+  ICON: '♥'
+  COLOR: '&c'
+  SLOT: 0
+  PERMISSION: 'icons.icon.heart'
+  MATERIAL: 'WOOL'
+  DATA: 0
+  NAME: 'Heart'
+  UNLOCKED-LORE:
+    - ''
+    - '&7&o(( &f&oClick &7&oto set your tab icon to &c&o♥ &7&o))'
+  LOCKED-LORE:
+    - ''
+    - '&7&o(( &f&oPurchase this at &f&ostore.server.net &7&o))'
+
+PENCIL:
+  ICON: '✎'
+  COLOR: '&b'
+  SLOT: 1
+  PERMISSION: 'icons.icon.pencil'
+  MATERIAL: 'WOOL'
+  DATA: 1
+  NAME: 'Pencil'
+  UNLOCKED-LORE:
+    - ''
+    - '&7&o(( &f&oClick &7&oto set your tab icon to &b&o✎ &7&o))'
+  LOCKED-LORE:
+    - ''
+    - '&7&o(( &f&oPurchase this at &f&ostore.server.net &7&o))'

@@ -1,0 +1,7 @@
+name: Icons
+version: ${project.version}
+main: tech.needvoid.icons.IconsPlugin
+api-version: 1.16
+depend: [ PlaceholderAPI ]
+authors: [ NeedVoid ]
+description: A plugin designed to add visual icons to tab.
