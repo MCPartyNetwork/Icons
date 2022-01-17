@@ -12,23 +12,27 @@ public class PlaceholderHook extends PlaceholderExpansion {
 
     public PlaceholderHook(IconsPlugin plugin) {
         this.plugin = plugin;
-
         this.register();
     }
 
     @Override
-    public String getIdentifier() {
+    public @NotNull String getIdentifier() {
         return "icons";
     }
 
     @Override
-    public String getAuthor() {
+    public @NotNull String getAuthor() {
         return "NeedVoid";
     }
 
     @Override
-    public String getVersion() {
+    public @NotNull String getVersion() {
         return "0.0.1";
+    }
+
+    @Override
+    public boolean persist() {
+        return true;
     }
 
     @Override

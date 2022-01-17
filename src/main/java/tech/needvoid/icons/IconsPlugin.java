@@ -1,6 +1,7 @@
 package tech.needvoid.icons;
 
 import org.bukkit.Bukkit;
+import org.bukkit.Material;
 import org.bukkit.plugin.java.JavaPlugin;
 import tech.needvoid.icons.icons.IconsGUIListener;
 import tech.needvoid.icons.icons.IconsManager;
@@ -48,6 +49,7 @@ public final class IconsPlugin extends JavaPlugin {
 
         if (Bukkit.getPluginManager().getPlugin("PlaceholderAPI") != null) {
             new PlaceholderHook(this);
+            CC.log("Placeholder successfully hooked.");
         }
 
         CC.log("Plugin started in " + (System.currentTimeMillis() - start) + "ms");

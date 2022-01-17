@@ -1,5 +1,6 @@
 package tech.needvoid.icons.profile;
 
+import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import tech.needvoid.icons.IconsPlugin;
 
@@ -28,7 +29,7 @@ public class ProfileManager {
     }
 
     public Profile getProfileByPlayer(UUID uuid) {
-        return this.profileMap.getOrDefault(uuid, null);
+        return this.profileMap.getOrDefault(uuid, new Profile(plugin, Bukkit.getOfflinePlayer(uuid)));
     }
 
     public Profile getProfileByPlayer(OfflinePlayer player) {

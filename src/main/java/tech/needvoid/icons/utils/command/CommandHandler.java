@@ -25,7 +25,7 @@ public class CommandHandler {
             Field field = SimplePluginManager.class.getDeclaredField("commandMap");
             field.setAccessible(true);
 
-            this. commandMap = (CommandMap) field.get(Bukkit.getPluginManager());
+            this.commandMap = (CommandMap) field.get(Bukkit.getPluginManager());
         } catch (Exception e) {
             e.printStackTrace();
         }
