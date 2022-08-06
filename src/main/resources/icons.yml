@@ -3,7 +3,7 @@ HEART:
   COLOR: '&c'
   SLOT: 0
   PERMISSION: 'icons.icon.heart'
-  MATERIAL: 'WOOL'
+  MATERIAL: 'RED_WOOL'
   DATA: 0
   NAME: 'Heart'
   UNLOCKED-LORE:
@@ -18,8 +18,7 @@ PENCIL:
   COLOR: '&b'
   SLOT: 1
   PERMISSION: 'icons.icon.pencil'
-  MATERIAL: 'WOOL'
-  DATA: 1
+  MATERIAL: 'WHITE_WOOL'
   NAME: 'Pencil'
   UNLOCKED-LORE:
     - ''

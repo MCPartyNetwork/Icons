@@ -4,7 +4,19 @@
 DEFAULT-ICON: ''
 TITLE: '&dIcons'
 GUI-SIZE: 18
+GUI-PAGE-SIZE: 1
 
 FORMATTING:
   RESET:
     SLOT: 17
+  BACK-PAGE:
+    SLOT: 9
+    NAME: '&cBack Page'
+    MATERIAL: 'ARROW'
+    DATA: 0
+  NEXT-PAGE:
+    SLOT: 17
+    NAME: '&aNext Page'
+    MATERIAL: 'ARROW'
+    DATA: 0
+

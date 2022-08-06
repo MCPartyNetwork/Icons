@@ -32,7 +32,7 @@ public class IconCommand extends SimpleCommand {
 
         Player player = (Player) sender;
         player.sendMessage(CC.colour("&aOpening the Icons GUI"));
-        new IconsGUI(this.plugin, player).openIconGUI();
+        new IconsGUI(this.plugin, player).openIconGUI(1);
         return true;
     }
 }

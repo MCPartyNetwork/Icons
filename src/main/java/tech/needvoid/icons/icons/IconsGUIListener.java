@@ -20,7 +20,8 @@ public class IconsGUIListener implements Listener {
     @EventHandler
     public void onClickInventory(InventoryClickEvent event) {
         if (event.getClickedInventory() == null) return;
-        if (!event.getView().getTitle().equalsIgnoreCase(CC.colour(this.plugin.getSettingsFile().getString("TITLE")))) return;
+        if (!event.getView().getTitle().equalsIgnoreCase(CC.colour(this.plugin.getSettingsFile().getString("TITLE"))))
+            return;
         event.setCancelled(true);
         if (event.getCurrentItem() == null || event.getCurrentItem().getType() == Material.AIR) return;
         if (event.getCurrentItem().getItemMeta() == null) return;
@@ -39,6 +40,29 @@ public class IconsGUIListener implements Listener {
                     player.sendMessage(CC.colour(this.plugin.getLangFile().getString("MESSAGES.NO-PERMISSION-PURCHASE")));
                 }
             }
+        }
+
+        if (event.getSlot() == this.plugin.getSettingsFile().getInt("FORMATTING.NEXT-PAGE.SLOT")) {
+
+            int currentPage = plugin.getIconsManager().getCurrentPage(player);
+            int maxPage = Math.max((int) Math.ceil((double) plugin.getIconsManager().getIconsList().size() / plugin.getIconsManager().getIconPerPage()), 1);
+
+            if (currentPage < maxPage) {
+                new IconsGUI(this.plugin, player).openIconGUI(currentPage + 1);
+            } else {
+                event.setCancelled(true);
+            }
+            return;
+        }
+
+        if (event.getSlot() == this.plugin.getSettingsFile().getInt("FORMATTING.BACK-PAGE.SLOT")) {
+            int currentPage = plugin.getIconsManager().getCurrentPage(player);
+            if (currentPage > 1) {
+                new IconsGUI(this.plugin, player).openIconGUI(currentPage - 1);
+            } else {
+                event.setCancelled(true);
+            }
+            return;
         }
 
         if (clickedItemName.equalsIgnoreCase(CC.colour("&cReset your icon"))) {
